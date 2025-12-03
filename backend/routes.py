@@ -83,7 +83,7 @@ def update_picture(id):
         for i in range(len(data)):
             if data[i]["id"]==id:
                 data[i]=n_pic
-                return jsonify(message="Picture updated"), 204
+                return jsonify(message="Picture updated"), 201
         return jsonify({"message": "picture not found"}), 404
 
 ######################################################################
